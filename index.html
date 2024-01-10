@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
+    html,body {
       font-family: Arial, Helvetica, sans-serif;
-      color : white
+      color : white;
+      margin: 0;
     }
     .header {
       padding: 40px;
@@ -21,6 +22,9 @@
     .navbar {
       overflow: hidden;
       background-color: #333;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
     }
     .navbar a {
       float: left;
@@ -38,7 +42,7 @@
     }
     .main {
       font-size: 28px;
-      padding: 100px;
+      padding: 50px;
       background: rgb(97, 128, 92);
     }
     .main h2 {
@@ -61,18 +65,19 @@
     <p>Test website created with the help of Bing AI.</p>
   </div>
   <div class="navbar">
-    <a href="#Home">Home</a>
-    <a href="#Home">About</a>
+    <a href="#">Home</a>
+    <a href="#About">About</a>
     <a href="#Projects">Projects</a>
     <a href="#Contact">Contact</a>
   </div>
   <div class="main">
-    <h2 id="Home">Myself</h2>
+    <h2 id="About">Myself</h2>
     <p>Hi, I'm Gokul Santhosh, a student from India.<br><br> I am learning new things like programming, designing, and hecking.</p>
     <h2 id="Projects">Projects</h2>
-    <p>Here is the only project that I have created in GitHub:</p>
+    <p>Here are the project that I have created in GitHub:</p>
     <ul>
-      <li><a href="#Home">Project 1</a>: An experimental website ie. the page you are seeing now</li>
+      <li><a href="#">Project 1</a>: An experimental website ie. the page you are seeing now</li>
+      <li><a href="https://github.com/gsxin/opengl-emulation">Project 2</a>: OpenGL Emulator for Windows and Linux</li>
     </ul>
     <h2 id="Contact">Contact </h2>
     <p>If you want to get in touch with me, you can message me in Github or Email</p>
