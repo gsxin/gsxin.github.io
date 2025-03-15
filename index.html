@@ -11,22 +11,22 @@
   <style>
     html,body {
       font-family: Arial, Helvetica, sans-serif;
-      color : white;
+      color : rgb(0, 0, 0);
       margin: 0;
-      background-color: #1a4e44;
+      background-color: #e1f0c5;
     }
     .header {
       padding: 40px;
       text-align: center;
-      background: #1a4e44;
-      color: white;
+      background: #b1c46c;
+      color: rgb(255, 255, 255);
     }
     .header h1 {
       font-size: 40px;
     }
     .navbar {
       overflow: hidden;
-      background-color: #333;
+      background-color: #8a9b5d;
       position: -webkit-sticky;
       position: sticky;
       top: 0;
@@ -34,21 +34,26 @@
     .navbar a {
       float: left;
       display:flex;
-      color: white;
+      color: rgb(255, 255, 255);
       text-align: center;
       padding: 16px 16px;
       text-decoration: none;
+      margin: 5px;
+      padding: 16px;
     }
     .navbar a:hover {
-      background-color: #1a3d16;
-      color:white;
-      text-transform:uppercase;
+      background-color: #ddf5b7;
+      color:rgb(0, 0, 0);
+      /* text-transform:uppercase; */
       font-weight:bolder;
+      border-radius: 100px;
+      margin: 5px;
+      padding: 16px;
     }
     .main {
       font-size: 28px;
       padding: 50px;
-      background: rgb(97, 128, 92);
+      background: rgb(231, 227, 173);
     }
     .main h2 {
       font-size: 36px;
@@ -59,37 +64,49 @@
     .footer {
       padding: 20px;
       text-align: center;
-      background:#1a4e44;
-      color: white;
+      background:#d7e77a;
+      color: rgb(0, 0, 0);
+    }
+    .card {
+      border-radius: 14px;
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 3%;
     }
   </style>
 </head>
 <body>
   <div class="header">
     <h1>gsX India</h1>
-    <p>Test website created with the help of Bing AI.</p>
+    <p>Test website created by gsxyz</p>
   </div>
   <div class="navbar">
     <a href="#">Home</a>
     <a href="#About">About</a>
-    <a href="#Projects">Projects</a>
+    <a href="#Projects">Works</a>
     <a href="#Contact">Contact</a>
   </div>
   <div class="main">
-    <h2 id="About">Myself</h2>
-    <p>Hi, I'm Gokul Santhosh, a student from India.<br><br> I am learning new things like programming, designing, and hecking.</p>
-    <h2 id="Projects">Projects</h2>
-    <p>Here are the project that I have created in GitHub:</p>
-    <ul>
-      <li><a href="#">Project 1</a>: An experimental website ie. the page you are seeing now</li>
-      <li><a href="https://github.com/gsxin/opengl-software-emulation">Project 2</a>: OpenGL Software Emulator for Windows and Linux</li>
-    </ul>
-    <h2 id="Contact">Contact </h2>
-    <p>If you want to get in touch with me, you can message me in Github or Email</p>
-    <ul>
-      <li><a href="https://github.com/gsxin">GitHub</a></li>
-      <li><a href="mailto:gokulsanthosh.xyz@gmail.com">Email</a></li>
-    </ul>
+    <div class="card">
+      <h2 id="About">Who am I ?</h2>
+      <p>I'm Gokul Santhosh, a student from India.<br><br> Also I'm a coder who's interested in Python, Kotlin and, HTML (with CSS).</p>
+    </div>
+    <div class="card">
+      <h2 id="Projects">Works</h2>
+      <p>Here's my few works:</p>
+      <ul>
+        <li><a href="https://github.com/gsxin/opengl-software-emulation">1</a>: OpenGL Software Emulator</li>
+        <li><a href="#">2</a>: A Website (this)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2 id="Contact">Contact </h2>
+      <p>Want to get in touch with me ?</p>
+      <ul>
+        <li><a href="https://github.com/gsxin">GitHub</a></li>
+        <li><a href="mailto:gokulsanthosh.xyz@gmail.com">Email</a></li>
+      </ul>
+    </div>
   </div>
   <div class="footer">
     <p>© 2024 gsxindia. All rights reserved.</p>
